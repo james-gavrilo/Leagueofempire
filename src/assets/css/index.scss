@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "BROOKLINE";
+  src: url("./Brookline.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
+
+body {
+  background-color: #151515 !important;
+}
+
+.first-slash {
+  position: absolute;
+  margin-left: -17%;
+  margin-top: -2%;
+  width: 5%;
+  height: 4px;
+  background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.8;
+  transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+}
+.end-slash {
+  margin-top: 5%;
+  margin-left: -2%;
+  width: 5%;
+  height: 4px;
+  background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.8;
+  transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+}
+
+.slash {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: -63px;
+    background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    );
+    opacity: 0.8;
+    transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+    width: 223px;
+    height: 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    right: -185px;
+    background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    );
+    opacity: 0.8;
+    transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+    width: 363px;
+    height: 5px;
+  }
+}
+.overview-text {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    );
+    opacity: 0.8;
+    transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+    width: 70px;
+    height: 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -45px;
+    background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    );
+    opacity: 0.8;
+    transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+    width: 70px;
+    height: 5px;
+  }
+}
+.slash-2 {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -45%;
+    background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    );
+    opacity: 0.8;
+    transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+    width: 369px;
+    height: 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    background: radial-gradient(
+      85.04% 3821.43% at -1.07% 24.03%,
+      rgba(255, 122, 0, 0) 0%,
+      #ff7a00 50.52%,
+      rgba(255, 122, 0, 0) 100%
+    );
+    opacity: 0.8;
+    transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+    width: 223px;
+    height: 5px;
+  }
+}
+.card {
+  background: linear-gradient(0deg, #151515, #151515),
+    linear-gradient(
+      140.61deg,
+      #ff7a00 0%,
+      rgba(255, 122, 0, 0) 27.77%,
+      rgba(255, 122, 0, 0) 49.05%,
+      rgba(255, 122, 0, 0) 86.92%,
+      #ff7a00 100.98%
+    );
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    140.61deg,
+    #ff7a00 0%,
+    rgba(255, 122, 0, 0) 27.77%,
+    rgba(255, 122, 0, 0) 49.05%,
+    rgba(255, 122, 0, 0) 86.92%,
+    #ff7a00 100.98%
+  );
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 24px;
+
+  width: 256px;
+  height: 292px;
+
+  background: #151515;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
